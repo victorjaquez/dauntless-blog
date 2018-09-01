@@ -1,11 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import "../App.css";
 
 class Preview extends Component {
   constructor() {
-    super() 
+    super();
     this.state = {
-      description: 'Preview'
-    }
+      description: "Preview"
+    };
   }
 
   render() {
@@ -13,8 +14,8 @@ class Preview extends Component {
       <div>
         <h1>Welcome to, {this.state.description}</h1>
       </div>
-    )
+    );
   }
-
-  export default Preview;
 }
+
+export default Preview;
