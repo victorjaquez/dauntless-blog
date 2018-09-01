@@ -58,7 +58,7 @@ class NewPost extends Component {
                 </div>
                 <Link to="/">
                   <button
-                    type="button"
+                    type="submit"
                     onClick={this.handleSubmit}
                     className="btn btn-primary btn-sm"
                     id="submit-btn"

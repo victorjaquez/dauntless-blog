@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.3",
+    "react-bootstrap-sweetalert": "^4.4.1",
     "react-dom": "^16.4.2",
     "react-google-maps": "^9.4.5",
     "react-redux": "^5.0.7",

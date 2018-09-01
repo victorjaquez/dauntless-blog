@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import user_icon from "../user_icon.png";
 import "../App.css";
 
 const Post = props => {
@@ -11,6 +12,7 @@ const Post = props => {
       <div className="card w-75">
         <div className="card-body">
           <h5 className="card-title">
+            <img src={user_icon} alt="user icon" id="user-icon" />
             {props.post.title.length > 15
               ? `${titleCharacterLimit}...`
               : props.post.title}
