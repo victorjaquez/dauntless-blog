@@ -8,11 +8,11 @@ const NavBar = () => {
       <div className="container">
         <Link to="/" className="navbar-brand">
           Dauntless
-          </Link>
+        </Link>
         <Link to="/" className="btn btn-secondary" id="home-btn">
           Home
         </Link>
-        <Link to="/posts/new" className="btn btn-secondary " id="create-btn">
+        <Link to="/post/new" className="btn btn-secondary " id="create-btn">
           Create Post
         </Link>
       </div>

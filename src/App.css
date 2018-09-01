@@ -7,6 +7,7 @@ nav {
   border-bottom: 1px solid silver;
   width: 100%;
 }
+
 .navbar-brand {
   margin-left: -310px;
   font-weight: bold;
@@ -21,12 +22,39 @@ nav {
   margin-left: -12px;
 }
 
-#create-btn {
+#home-btn:hover {
+  color: white;
+  background-color: #0d767b;
+}
+
+#create-btn:hover {
   border: 1px solid black;
   color: white;
   background-color: #0d767b;
   float: right;
   margin-right: -20px;
+}
+
+#create-btn {
+  border: 1px solid black;
+  color: #0d767b;
+  background-color: white;
+  float: right;
+  margin-right: -20px;
+}
+
+#submit-btn:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: #0d767b;
+  float: right;
+}
+
+#submit-btn {
+  border: 1px solid black;
+  color: #0d767b;
+  background-color: white;
+  float: right;
 }
 
 #quote {
@@ -45,13 +73,33 @@ section {
   padding: 10px;
 }
 
+.card-header {
+  text-align: center;
+}
+
+#new-post-card {
+  margin-top: 25px;
+}
+
 .card-title {
   font-weight: bold;
   font-size: 26px;
   padding: -5px;
 }
 
+#read-btn:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: #0d767b;
+  float: right;
+  margin-top: -28px;
+  margin-right: 5px;
+}
+
 #read-btn {
+  border: 1px solid black;
+  color: #000000;
+  background-color: #ffffff;
   float: right;
   margin-top: -28px;
   margin-right: 5px;

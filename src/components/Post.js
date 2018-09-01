@@ -8,7 +8,7 @@ const Post = props => {
 
   return (
     <div className="row">
-      <div className="card">
+      <div className="card w-75">
         <div className="card-body">
           <h5 className="card-title">
             {props.post.title.length > 15
