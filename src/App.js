@@ -33,7 +33,6 @@ class App extends Component {
           <Route exact path="/post/new" component={NewPost} />
           <Route exact path="/" component={Home} />
           <Route exact path="/post/:id" component={Preview} />
-
           <Route exact path="/author/:authorname" component={Author} />
         </Switch>
       </div>

@@ -4,6 +4,7 @@ import user_icon from "../user_icon.png";
 import "../App.css";
 
 const Post = props => {
+  let { post } = props;
   const titleCharacterLimit = props.post.title.slice(0, 15);
   const bodyCharacterLimit = props.post.body.slice(0, 30);
 
@@ -24,7 +25,7 @@ const Post = props => {
           </p>
           <Link
             className="btn btn-secondary btn-sm"
-            to="/posts/:id"
+            to={{ pathname: `/post/${post.id}` }}
             id="read-btn"
           >
             Read more. .

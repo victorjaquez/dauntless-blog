@@ -116,6 +116,12 @@ h5 {
   margin-left: -5px;
 }
 
+#preview-title {
+  margin-left: 40px;
+  font-weight: 600;
+  font-style: oblique;
+}
+
 h1 {
   text-align: center;
 }
@@ -129,4 +135,17 @@ h1 {
   width: 30px;
   padding: 5px;
   margin-right: 5px;
+}
+
+#comments-section {
+  margin-top: 150px;
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+}
+
+#post_thumbnail {
+  padding: 5px;
+  margin-right: 5px;
+  width: 30%;
 }

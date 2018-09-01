@@ -18,7 +18,7 @@ class NewPost extends Component {
 
   handleSubmit() {
     let { title, body } = this.state;
-    this.props.Actions.addPost({ userId: 1, title, body });
+    this.props.Actions.addPost({ userId: 0, title, body });
   }
 
   updateNew = ({ target: { value } }, field) => {
