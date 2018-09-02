@@ -2,9 +2,10 @@
   "name": "dauntless-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://victorjaquez.github.io/dauntless-blog/",
+  "homepage": "https://victorjaquez.github.io/dauntless-blog",
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.3",
     "react-bootstrap-sweetalert": "^4.4.1",
@@ -25,12 +26,5 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "build": "react-scripts build"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {
-    "gh-pages": "^1.2.0"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
