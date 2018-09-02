@@ -107,7 +107,7 @@ class Preview extends Component {
         </h4>
         {displayComments ? (
           <div className="row" id="comment-form">
-            <div className="card" style={{ width: "24rem" }}>
+            <div className="card">
               <p>
                 <b>Leave a comment</b>
               </p>
