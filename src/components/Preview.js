@@ -3,7 +3,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import * as Actions from "../actions/actions";
-import post_thumbnail from "../post_thumbnail.png";
+import post_thumbnail from "../post_thumbnail.jpeg";
 import "../App.css";
 
 class Preview extends Component {
@@ -68,43 +68,49 @@ class Preview extends Component {
           .filter(comment => comment.postId === +this.props.match.params.id)
           .slice(0, 5)
           .map((comment, i) => (
-            <div className="container" key={i}>
-              <div className="card w-75">
-                <div className="card-body">
-                  <h5 className="card-title">
-                    <p className="card-text">{comment.name}</p>
-                    <p className="card-text">{comment.body}</p>
-                    <p className="card-text">{comment.email}</p>
-                  </h5>
-                </div>
-              </div>
+            <div className="list-group" key={i}>
+              <p className="list-group-item" id="list-title">
+                <b>Title:</b> {comment.name}
+              </p>
+              <p className="list-group-item">
+                <b>Body:</b> {comment.body}
+              </p>
+              <p className="list-group-item">
+                <b>Email:</b> {comment.email}
+              </p>
             </div>
           ))
       : "";
     return (
-      <div className="container">
+      <div className="container" id="preview-post">
         <img src={post_thumbnail} alt="post_thumbnail" id="post_thumbnail" />
         <h5 id="preview-title">{post ? post.title : ""}</h5>
         <p>{post ? post.body : ""}</p>
 
-        <h6>
+        <h4>
           <p>
-            Author:
             {""}
             {author ? (
               <Link
                 to={{ pathname: `/author/${author.name ? author.id : null}` }}
               >
-                <p>{author.name}</p>
+                <p id="author-id">
+                  {" "}
+                  <b>By: </b>
+                  {author.name}
+                </p>
               </Link>
             ) : (
               " Anonymous User"
             )}
           </p>
-        </h6>
+        </h4>
         {displayComments ? (
-          <div className="container">
-            <div className="card">
+          <div className="row" id="comment-form">
+            <div className="card" style={{ width: "24rem" }}>
+              <p>
+                <b>Leave a comment</b>
+              </p>
               <div className="card-body">
                 <form>
                   <fieldset>
@@ -160,7 +166,7 @@ class Preview extends Component {
             className="btn btn-primary btn-sm"
             id="submit-btn"
           >
-            Add
+            Submit comment
           </button>
         )}
         <div className="row" id="comments-section">

@@ -30,14 +30,18 @@ class NewPost extends Component {
   render() {
     let { title, body } = this.state;
     return (
-      <div>
-        <div className="card" id="new-post-card">
-          <div className="card-header">Create new post</div>
+      <div className="container">
+        <div className="card w-75" id="new-post-card">
+          <div className="card-header">
+            <h2>Create new post</h2>
+          </div>
           <div className="card-body">
             <form>
               <fieldset>
                 <div className="form-group">
-                  <label>Title:</label>
+                  <label>
+                    <b>Title: </b>
+                  </label>
                   <input
                     type="text"
                     value={title}
@@ -47,7 +51,9 @@ class NewPost extends Component {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Body:</label>
+                  <label>
+                    <b>Body: </b>
+                  </label>
                   <input
                     type="text"
                     value={body}
