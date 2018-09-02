@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import * as Actions from "../actions/actions";
 import Post from "./Post";
 import "../App.css";
 

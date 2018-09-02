@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter, Link } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import "./App.css";
@@ -17,11 +17,6 @@ class App extends Component {
     this.props.Actions.fetchPosts();
     this.props.Actions.fetchAuthors();
     this.props.Actions.fetchComments();
-  }
-
-  homeRedirect(e) {
-    e.preventDefault();
-    this.props.history.replace("/");
   }
 
   render() {
