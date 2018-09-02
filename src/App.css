@@ -5,23 +5,20 @@ body {
 }
 
 nav {
-  display: flex;
+  display: block;
   border-bottom: 1px solid silver;
   width: 100%;
 }
 
 .navbar-brand {
-  margin-left: -310px;
   font-weight: bold;
   color: black;
-  border-right: 1px solid black;
-  padding: 10px;
+  margin-left: 20px;
 }
 
 #home-btn {
   border: none;
-  margin-top: 1px;
-  margin-left: -12px;
+  margin-left: 40px;
 }
 
 #home-btn:hover {
@@ -33,16 +30,18 @@ nav {
   border: 1px solid black;
   color: white;
   background-color: #0d767b;
-  float: right;
-  margin-right: -20px;
 }
 
 #create-btn {
   border: 1px solid black;
   color: #0d767b;
   background-color: white;
-  float: right;
-  margin-right: -20px;
+  margin-left: 40px;
+}
+
+#logo {
+  margin-right: 470px;
+  margin-left: 110px;
 }
 
 #submit-btn:hover {

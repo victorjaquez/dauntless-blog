@@ -4,15 +4,19 @@ import "../App.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container">
-        <Link to="/" className="navbar-brand">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <div className="container-fluid">
+        <Link to="/" className="navbar-brand" id="logo">
           Dauntless
         </Link>
-        <Link to="/" className="btn btn-secondary" id="home-btn">
+        <Link to="/" className="navbar-brand" id="home-btn">
           Home
         </Link>
-        <Link to="/post/new" className="btn btn-secondary " id="create-btn">
+        <Link
+          to="/post/new"
+          className="navbar-brand btn btn-secondary"
+          id="create-btn"
+        >
           Create Post
         </Link>
       </div>
