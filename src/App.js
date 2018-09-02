@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Route, Switch, withRouter, Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import logo from "./logo.svg";
 import "./App.css";
 
 import NewPost from "./components/NewPost";
@@ -33,7 +32,7 @@ class App extends Component {
           <Route exact path="/post/new" component={NewPost} />
           <Route exact path="/" component={Home} />
           <Route exact path="/post/:id" component={Preview} />
-          <Route exact path="/author/:authorname" component={Author} />
+          <Route exact path="/author/:id" component={Author} />
         </Switch>
       </div>
     );

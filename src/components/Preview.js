@@ -92,8 +92,10 @@ class Preview extends Component {
             Author:
             {""}
             {author ? (
-              <Link to={{ pathname: `/author/${author.name}` }}>
-                <h5>{author.name}</h5>
+              <Link
+                to={{ pathname: `/author/${author.name ? author.id : null}` }}
+              >
+                <p>{author.name}</p>
               </Link>
             ) : (
               " Anonymous User"
