@@ -9,8 +9,8 @@ const Post = props => {
   const bodyCharacterLimit = props.post.body.slice(0, 30);
 
   return (
-    <div className="row">
-      <div className="card w-75">
+    <div className="row" id="id-row">
+      <div className="card w-75 ">
         <div className="card-body">
           <h5 className="card-title">
             <img src={user_icon} alt="user icon" id="user-icon" />

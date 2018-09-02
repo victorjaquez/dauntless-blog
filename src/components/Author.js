@@ -20,39 +20,48 @@ const Author = props => {
   return (
     <div>
       {author ? (
-        <div className="card">
-          <div className="card-header">{author.name}</div>
-          <div className="card-body">
-            <p className="card-text">Username: {author.username}</p>
-            <p className="card-text">
-              Website:
-              {author.email}
-            </p>
-            <p className="card-text">
-              Phone:
-              {author.phone}
-            </p>
-            <p className="card-text">
-              Company:
-              {author.company.name}
-            </p>
-            <p className="card-text">
-              Company CatchPhrase:
-              {author.company.catchPhrase}
-            </p>
-            <p className="card-text">Company bs: {author.company.bs}</p>
+        <div className="container">
+          <div className="card w-75">
+            <div className="card-header">
+              <h2>{author.name}</h2>
+            </div>
+            <div className="card-body">
+              <p className="card-text">
+                <b>Username: </b>
+                {author.username}
+              </p>
+              <p className="card-text">
+                <b>Website: </b>
+                {author.email}
+              </p>
+              <p className="card-text">
+                <b>Phone: </b>
+                {author.phone}
+              </p>
+              <p className="card-text">
+                <b>Company: </b>
+                {author.company.name}
+              </p>
+              <p className="card-text">
+                <b>Company CatchPhrase: </b>
+                {author.company.catchPhrase}
+              </p>
+              <p className="card-text">
+                <b>Company bs:</b> {author.company.bs}
+              </p>
+            </div>
           </div>
         </div>
       ) : (
         ""
       )}
       {author ? (
-        <div>
+        <div className="container">
           <MapWithAMarker
             lat={author.address.geo.lat}
             lng={author.address.geo.lng}
             containerElement={<div style={{ height: `400px` }} />}
-            mapElement={<div style={{ height: `50%` }} />}
+            mapElement={<div style={{ height: `70%` }} />}
           />
         </div>
       ) : (
