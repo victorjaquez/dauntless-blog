@@ -5,7 +5,7 @@ import "../App.css";
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light">
-      <div className="container-fluid">
+      <div className="container">
         <Link to="/" className="navbar-brand" id="logo">
           Dauntless
         </Link>
